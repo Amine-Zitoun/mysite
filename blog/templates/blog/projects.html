@@ -1,0 +1,109 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Projects</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="{% static 'blog/projects.css' %}">
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+    <link href="https://fonts.googleapis.com/css?family=Roboto+Mono&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Lato&display=swap" rel="stylesheet">
+  </head>
+  <body>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo01" aria-controls="navbarTogglerDemo01" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+  <div class="collapse navbar-collapse" id="navbarTogglerDemo01">
+    <a class="navbar-brand" href="{% url 'about'%}">About</a>
+    <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
+      <li class="nav-item active">
+        <a class="nav-link" href="{% url 'index' %}">Home <span class="sr-only">(current)</span></a>
+      </li>
+      <li class="nav-item active">
+        <a class="nav-link" href="{% url 'projects' %}">Projects <span class="sr-only">(current)</span></a>
+      </li>
+      <li class="nav-item active">
+        <a class="nav-link" href="https://github.com/Amine-Zitoun">Github <span class="sr-only">(current)</span></a>
+      </li>
+
+    </ul>
+
+  </div>
+</nav>
+
+    <table class="padding-table-columns" style="text-align: center">
+      <tr>
+          <td>
+            <div class="card" style="width: 18rem;">
+              <div class="card-body">
+                <h5 class="card-title"> Introductione </h5>
+                <p class="card-text">So I consider my self a data scientist , most of my projects are revolving around Exploratory data analysis Mostly Analysing
+                Data and Getting Conclusions out of raw data and that's what I love about I do which is my ability to get information out of data
+                Which enables me to learn further more about the world we live in each time I analyse a new dataset
+                I might'v included some Links to Data Sciense competetions I competed in , And Some other side apps I did just for fun </p>
+                <a href="#" class="btn btn-primary">Go somewhere</a>
+              </div>
+            </div>
+          </td>
+          <td>
+            <div class="card" style="width: 18rem; height: 30rem">
+              <div class="card-body">
+                <h5 class="card-title">Hospital Drug Analysis</h5>
+                <br><br><br>
+                <p class="card-text">For this project I actually used a Local Hospital Data to analyse the types and amounts of drugs\
+                used there to sort of get an idea on the kind of diseases we got at the hospital</p>
+                <br><br><br><BR><br>
+                <a href="#" class="btn btn-primary">Go somewhere</a>
+              </div>
+            </div>
+          </td>
+          <td>
+            <div class="card" style="width: 18rem; height: 30rem">
+              <div class="card-body">
+                <h5 class="card-title">Suicide Attempt Analysis:</h5>
+                <br><br><br>
+                <p class="card-text">I used a Public Dataset in kaggle , I tried to predict based on features like sex,age,job etc... to predict whether someone Attempts Suicide or not</p>
+                <br><br><br><br><br><br>
+                <a href="#" class="btn btn-primary">Go somewhere</a>
+              </div>
+            </div>
+          </td>
+      </tr>
+      <tr>
+        <td>
+          <div class="card" style="width: 18rem; height: 30rem">
+            <div class="card-body">
+              <h5 class="card-title">Toxic Classifier</h5>
+              <br><br><br>
+              <p class="card-text">Tried to Classifiy whether a comment is toxic or not beforehand</p>
+              <br><br><br><br><br><br><br><br>
+              <a href="#" class="btn btn-primary">Go somewhere</a>
+            </div>
+          </div>
+        </td>
+        <td>
+          <div class="card" style="width: 18rem; height: 30rem">
+            <div class="card-body">
+              <h5 class="card-title">Competetions</h5>
+              <br><br><br>
+              <p class="card-text">Comepteted in a lot of comeptetions actually one of them is Drive Data comeptetion where I was 1514/7496 another I'm in right now where I got 86/2706 in another one Link</p>
+              <br><br><br><br><br>
+              <a href="#" class="btn btn-primary">Go somewhere</a>
+            </div>
+          </div>
+        </td>
+      </tr>
+    </table>
+
+
+
+
+
+
+  </body>
+</html>
