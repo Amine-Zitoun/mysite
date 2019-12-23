@@ -13,29 +13,27 @@
     <link href="https://fonts.googleapis.com/css?family=Roboto+Mono&display=swap" rel="stylesheet">
   </head>
   <body>
-    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
-  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo01" aria-controls="navbarTogglerDemo01" aria-expanded="false" aria-label="Toggle navigation">
-    <span class="navbar-toggler-icon"></span>
-  </button>
-  <div class="collapse navbar-collapse" id="navbarTogglerDemo01">
-    <a class="navbar-brand" href="{% url 'about' %}">About</a>
-    <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
-      <li class="nav-item active">
-        <a class="nav-link" href="{% url 'index' %}">Home <span class="sr-only">(current)</span></a>
-      </li>
-      <li class="nav-item active">
-        <a class="nav-link" href="{% url 'projects' %}">Projects <span class="sr-only">(current)</span></a>
-      </li>
-      <li class="nav-item active">
-        <a class="nav-link" href="https://github.com/Amine-Zitoun">Github <span class="sr-only">(current)</span></a>
-      </li>
+    <nav class="navbar navbar-expand-lg navbar bg" >
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo01" aria-controls="navbarTogglerDemo01" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarTogglerDemo01"style="background-color: rgb(43,9,55);">
+      <a class="navbar-brand" href="{% url 'about'%}" style="color: white;font-weight: bolder;">About</a>
+      <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
+        <li class="nav-item active" >
+          <a class="nav-link" href="{% url 'index' %} "style="color: white;font-weight: bold;">Home <span class="sr-only">(current)</span></a>
+        </li>
+        <li class="nav-item active">
+          <a class="nav-link" href="{% url 'projects' %} "style="color: white;font-weight: bold;">Projects <span class="sr-only">(current)</span></a>
+        </li>
+        <li class="nav-item active">
+          <a class="nav-link" href="https://github.com/Amine-Zitoun" style="color: white;font-weight: bold;">Github <span class="sr-only">(current)</span></a>
+        </li>
+      </ul>
+    </div>
+  </nav>
 
-    </ul>
-
-  </div>
-</nav>
-
-  <p class="lb-abt">I'm just a nerdy 16 year old that loves to code..</p>
+  <p class="lb-abt"  style="color: rgb(193,244,123);">I'm just a nerdy 16 year old that loves to code..</p>
   <a href="{% url 'about' %}"><button class="btn-mid" >About Me</button></a>
 
 

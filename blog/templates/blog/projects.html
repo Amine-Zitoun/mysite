@@ -20,30 +20,30 @@
       <span class="navbar-toggler-icon"></span>
     </button>
     <div class="collapse navbar-collapse" id="navbarTogglerDemo01"style="background-color: rgb(43,9,55);">
-      <a class="navbar-brand" href="{% url 'about'%}" style="color: #ff9d76;font-weight: bolder;">About</a>
+      <a class="navbar-brand" href="{% url 'about'%}" style="color: white;font-weight: bolder;">About</a>
       <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
         <li class="nav-item active" >
-          <a class="nav-link" href="{% url 'index' %} "style="color: #ff9d76;font-weight: bold;">Home <span class="sr-only">(current)</span></a>
+          <a class="nav-link" href="{% url 'index' %} "style="color: white;font-weight: bold;">Home <span class="sr-only">(current)</span></a>
         </li>
         <li class="nav-item active">
-          <a class="nav-link" href="{% url 'projects' %} "style="color: #ff9d76;font-weight: bold;">Projects <span class="sr-only">(current)</span></a>
+          <a class="nav-link" href="{% url 'projects' %} "style="color: white;font-weight: bold;">Projects <span class="sr-only">(current)</span></a>
         </li>
         <li class="nav-item active">
-          <a class="nav-link" href="https://github.com/Amine-Zitoun" style="color: #ff9d76;font-weight: bold;">Github <span class="sr-only">(current)</span></a>
+          <a class="nav-link" href="https://github.com/Amine-Zitoun" style="color: white;font-weight: bold;">Github <span class="sr-only">(current)</span></a>
         </li>
       </ul>
     </div>
   </nav>
-    <div class="jumbotron" style="margin-top: 50px;margin-left: 70px;width: 90%;background-color: #F6E1E1">
-    <h1 class="display-4" style="color: #333366">Introduction</h1>
-    <p class="lead" style="color: #333366;">So I consider my self a data scientist , most of my projects are revolving around exploratory data analysis mostly analysing
+    <div class="jumbotron" style="margin-top: 50px;margin-left: 70px;width: 90%;background-color: rgb(43,9,55);border:3px solid #F6E1E1;">
+    <h1 class="display-4" style="color: #F6E1E1">Introduction</h1>
+    <p class="lead" style="color: #F6E1E1">So I consider my self a data scientist , most of my projects are revolving around exploratory data analysis mostly analysing
     data and getting Conclusions out of it and that's what I love about what I do : my ability to get information out of raw data,
     which enables me to learn further more about the world we live in each time I analyse a new dataset
-    I might'v included some links to data sciense competetions I competed in , and some other side projects I developed,and ones revolving around Penteration testing  </p>
+    I might've included some links to data sciense competetions I competed in , and some other side projects I developed,and ones revolving around Penteration testing  </p>
 
     </div>
     <br><br>
-    <h1 style="color: #ff9d76;margin-left: 73px;font-family: 'Noto Sans', sans-serif;">Data Sciense: </h1>
+    <h1 style="color: white;;margin-left: 73px;font-family: 'Noto Sans', sans-serif;">Data Sciense: </h1>
     <table class="padding-table-columns" style="text-align: center">
       <tr>
           <td>
@@ -114,7 +114,7 @@
         </td>
       </tr>
     </table>
-    <h1 style="color: #ff9d76;margin-left: 73px;font-family: 'Noto Sans', sans-serif;">Side Projects: </h1>
+    <h1 style="color: white;;margin-left: 73px;font-family: 'Noto Sans', sans-serif;">Side Projects: </h1>
     <table class="padding-table-columns" style="text-align: center">
       <tr>
           <td>
@@ -152,10 +152,32 @@
           </td>
       </tr>
     </table>
-
-
-
-
-
+    <h1 style="color: white;;margin-left: 73px;font-family: 'Noto Sans', sans-serif;">Penetration Testing: </h1>
+    <table class="padding-table-columns" style="text-align: center">
+      <tr>
+          <td>
+            <div class="card" style="width: 18rem; height: 30rem;background-color: #F6E1E1 " >
+              <img src="../../static/blog/serv.jpg" class="card-img-top" height="200px" alt="...">
+              <div class="card-body">
+                <h5 class="card-title"style="color: #333366">Port Scanner</h5>
+                <p class="card-text">Port Scanner using python work below</p>
+                <br><br>
+                <a href="https://github.com/Amine-Zitoun/port_scanner" class="btn btn-primary">Work here</a>
+              </div>
+            </div>
+          </td>
+          <td>
+            <div class="card" style="width: 18rem; height: 30rem;background-color: #F6E1E1">
+              <img src="../../static/blog/rev.jpg" class="card-img-top" height="200px" alt="...">
+              <div class="card-body">
+                <h5 class="card-title"style="color: #333366">Reverse shell:</h5>
+                <p class="card-text">A reverse shell attack using python work below</p>
+                <br><br><br>
+                <a href="https://github.com/Amine-Zitoun/reverse-shell" class="btn btn-primary">Work here</a>
+              </div>
+            </div>
+          </td>
+      </tr>
+    </table>
   </body>
 </html>

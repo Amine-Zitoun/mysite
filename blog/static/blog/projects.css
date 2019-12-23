@@ -4,7 +4,9 @@ body{
 
 
 }
-
+html {
+  scroll-behavior: smooth;
+}
 table{
   margin-left: 30px;
 
