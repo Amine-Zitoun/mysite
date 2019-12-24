@@ -1,0 +1,64 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>About</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="{% static 'blog/about.css' %}">
+    <link href="https://fonts.googleapis.com/css?family=Ubuntu&display=swap" rel="stylesheet">
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+    <link href="https://fonts.googleapis.com/css?family=Roboto+Mono&display=swap" rel="stylesheet">
+  </head>
+  <body>
+    <nav class="navbar navbar-expand-lg navbar bg" >
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo01" aria-controls="navbarTogglerDemo01" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarTogglerDemo01"style="background-color: rgb(43,9,55);">
+      <a class="navbar-brand" href="{% url 'about'%}" style="color: white;font-weight: bolder;">About</a>
+      <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
+        <li class="nav-item active" >
+          <a class="nav-link" href="{% url 'index' %} "style="color: white;font-weight: bold;">Home <span class="sr-only">(current)</span></a>
+        </li>
+        <li class="nav-item active">
+          <a class="nav-link" href="{% url 'projects' %} "style="color: white;font-weight: bold;">Projects <span class="sr-only">(current)</span></a>
+        </li>
+        <li class="nav-item active">
+          <a class="nav-link" href="https://github.com/Amine-Zitoun" style="color: white;font-weight: bold;">Github <span class="sr-only">(current)</span></a>
+        </li>
+      </ul>
+    </div>
+  </nav>
+
+<main>
+  <div class="histarted">
+  <h1>How I Started: </h1>
+  <br><br>
+  <p> So basically, I was a normal kid looking for a passion and sort of lost, until one of my cool friends, my best friend in particular, told me about coding. I wasn't motivated at the time, because I had considered it once before and didn't really like the idea, but together we motivated each other, and we eventually came to love it.
+ <br><br> When I got home, I started learning C#, but I didn't really have a purpose at the time. I was told it was easy so I kinda got the hang of it, yet it wasn't really something. I became more interested by the day, then I learnt HTML, followed by CSS and JavaScript.
+ <br><br> After making websites for about 4 months, I learnt C++ and then Python. Following that, I made a couple of casual programs, but eventually I got bored of making desktop apps.
+<br><br>
+And then I found my love and passion, which was Machine Learning,
+  <br>
+At first it was quite painful, because unlike the rest, it required a lot of math. And since I'm just a 16 y.o, I kinda suffered a bit there.
+But I didn't give up, and I had to learn all that I need from advanced statistics, probability, and calculus; all the good stuff. And then I got to the fun part, which was coding. <br>
+
+The first couple of months were pretty hard, but as always, I didn't give up. I carried on learning and started participating in Data Science competitions as well as using random datasets on the internet to perform EDA on them. At this point, after a lot of hard work and quite a lot of pain, I remain at the rank of 83 out of 2706 competitors in a Data Science competition hosted by <a  style="color: rgb(193,244,123);" href="https://www.drivendata.org/competitions/54/machine-learning-with-a-heart">Driven Data</a>
+  <br><br>
+
+Feel free to check out my work here on my <a style="color: rgb(193,244,123)" href="https://github.com/Amine-Zitoun">github</a></p>
+
+
+
+
+</main>
+
+
+
+
+  </body>
+</html>

@@ -1,0 +1,183 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Projects</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="{% static 'blog/projects.css' %}">
+    <link href="https://fonts.googleapis.com/css?family=Noto+Sans&display=swap" rel="stylesheet">
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+    <link href="https://fonts.googleapis.com/css?family=Roboto+Mono&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Lato&display=swap" rel="stylesheet">
+  </head>
+  <body>
+    <nav class="navbar navbar-expand-lg navbar bg" >
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo01" aria-controls="navbarTogglerDemo01" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarTogglerDemo01"style="background-color: rgb(43,9,55);">
+      <a class="navbar-brand" href="{% url 'about'%}" style="color: white;font-weight: bolder;">About</a>
+      <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
+        <li class="nav-item active" >
+          <a class="nav-link" href="{% url 'index' %} "style="color: white;font-weight: bold;">Home <span class="sr-only">(current)</span></a>
+        </li>
+        <li class="nav-item active">
+          <a class="nav-link" href="{% url 'projects' %} "style="color: white;font-weight: bold;">Projects <span class="sr-only">(current)</span></a>
+        </li>
+        <li class="nav-item active">
+          <a class="nav-link" href="https://github.com/Amine-Zitoun" style="color: white;font-weight: bold;">Github <span class="sr-only">(current)</span></a>
+        </li>
+      </ul>
+    </div>
+  </nav>
+    <div class="jumbotron" style="margin-top: 50px;margin-left: 70px;width: 90%;background-color: rgb(43,9,55);border:3px solid #F6E1E1;">
+    <h1 class="display-4" style="color: #F6E1E1">Introduction</h1>
+    <p class="lead" style="color: #F6E1E1">So I consider my self a data scientist , most of my projects are revolving around exploratory data analysis mostly analysing
+    data and getting Conclusions out of it and that's what I love about what I do : my ability to get information out of raw data,
+    which enables me to learn further more about the world we live in each time I analyse a new dataset
+    I might've included some links to data sciense competetions I competed in , and some other side projects I developed,and ones revolving around Penteration testing  </p>
+
+    </div>
+    <br><br>
+    <h1 style="color: white;;margin-left: 73px;font-family: 'Noto Sans', sans-serif;">Data Sciense: </h1>
+    <table class="padding-table-columns" style="text-align: center">
+      <tr>
+          <td>
+            <div class="card" style="width: 18rem; height: 30rem;background-color: #F6E1E1 " >
+              <img src="../../../media/drugs.jpg" class="card-img-top" height="200px" alt="...">
+              <div class="card-body">
+                <h5 class="card-title"style="color: #333366">Hospital Drug Analysis</h5>
+                <p class="card-text">For this project I actually used a local hospital data to analyse the types and amounts of drugs
+                used there to  get an idea about the kind of diseases we got at the hospital</p>
+                <a href="https://github.com/Amine-Zitoun/Hospital-Drug-Analysis" class="btn btn-primary">Work here</a>
+              </div>
+            </div>
+          </td>
+          <td>
+            <div class="card" style="width: 18rem; height: 30rem;background-color: #F6E1E1">
+              <img src="../../../media/suicide.jpg" class="card-img-top" height="200px" alt="...">
+              <div class="card-body">
+                <h5 class="card-title"style="color: #333366">Suicide Attempt Analysis:</h5>
+                <p class="card-text">I used a public dataset in kaggle , I tried to predict based on features like sex,age,job etc... to predict whether someone attempts suicide or not</p>
+                <br>
+                <a href="https://github.com/Amine-Zitoun/Suicide-Attempt-Prediction" class="btn btn-primary">Work here</a>
+              </div>
+            </div>
+          </td>
+          <td>
+            <div class="card" style="width: 18rem; height: 30rem;background-color: #F6E1E1">
+              <img src="../../../media/heart_disease.jpg" class="card-img-top" height="200px" alt="...">
+              <div class="card-body">
+                <h5 class="card-title"style="color: #333366">Heart Disease Prediction:</h5>
+                <p class="card-text">I used a Public Dataset in kaggle (once again ) , to predict based on age,sex,chleserum, chest pain type etc... the probability of having a heart disease </p>
+                <br>
+                <a href="https://github.com/Amine-Zitoun/Heart_disease_prediction" class="btn btn-primary">Work here</a>
+              </div>
+            </div>
+          </td>
+      </tr>
+      <tr>
+        <td>
+          <div class="card" style="width: 18rem; height: 30rem;background-color: #F6E1E1">
+            <img src="../../../media/insta.jpg" class="card-img-top" height="200px" alt="...">
+            <div class="card-body">
+              <h5 class="card-title"style="color: #333366">Photo Estimator</h5>
+              <p class="card-text">the major idea is to check your last images and their correspendant likes and views and use Supervised learning to predict whether your next image will get as many likes or not</p>
+
+              <a href="https://github.com/Amine-Zitoun/Photo-Estimator" class="btn btn-primary">Work here</a>
+            </div>
+          </div>
+        </td>
+        <td>
+          <div class="card" style="width: 18rem; height: 30rem;background-color: #F6E1E1">
+            <img src="../../../media/compt.jpg" class="card-img-top" height="200px" alt="...">
+            <div class="card-body">
+              <h5 class="card-title"style="color: #333366">Competetions</h5>
+              <p class="card-text">Comepteted in a lot of comeptetions actually one of them is Driven Data comeptetion where I was 1514/7496 another I'm in right now where I got 86/2706 in another one link</p>
+              <a href="https://www.drivendata.org/users/CoolName69/" class="btn btn-primary">Account</a>
+            </div>
+          </div>
+        </td>
+        <td>
+          <div class="card" style="width: 18rem; height: 30rem;background-color: #F6E1E1">
+            <img src="../../../media/text.jpg" class="card-img-top" height="200px" alt="...">
+            <div class="card-body">
+              <h5 class="card-title"style="color: #333366">Lightgbm Text Classifier:</h5>
+              <p class="card-text">I basically found this data with some text and the target was to be predict whether the text is toxic or not so I trained two lightgbm model one with tfidvectorizer and one without that.</p>
+              <a href="https://github.com/Amine-Zitoun/Lightgbm-Text-Classifier" class="btn btn-primary">Work here</a>
+            </div>
+          </div>
+        </td>
+      </tr>
+    </table>
+    <h1 style="color: white;;margin-left: 73px;font-family: 'Noto Sans', sans-serif;">Side Projects: </h1>
+    <table class="padding-table-columns" style="text-align: center">
+      <tr>
+          <td>
+            <div class="card" style="width: 18rem; height: 30rem;background-color: #F6E1E1 " >
+              <img src="../../../media/lo.jpg" class="card-img-top" height="200px" alt="...">
+              <div class="card-body">
+                <h5 class="card-title"style="color: #333366">HunterOfLegends</h5>
+                <p class="card-text">A project based on the game League Of Legends, you can get more info about the project in my github, the link to the repo below</p>
+                <br><br>
+                <a href="https://github.com/Amine-Zitoun/HuntOfLegends" class="btn btn-primary">Work here</a>
+              </div>
+            </div>
+          </td>
+          <td>
+            <div class="card" style="width: 18rem; height: 30rem;background-color: #F6E1E1">
+              <img src="../../../media/todo.jpg" class="card-img-top" height="200px" alt="...">
+              <div class="card-body">
+                <h5 class="card-title"style="color: #333366">Simple to do app:</h5>
+                <p class="card-text">A simple to do app just prettier..made with python and a bit of html and css</p>
+                <br><br><br>
+                <a href="https://github.com/Amine-Zitoun/TO-DO-APP" class="btn btn-primary">Work here</a>
+              </div>
+            </div>
+          </td>
+          <td>
+            <div class="card" style="width: 18rem; height: 30rem;background-color: #F6E1E1">
+              <img src="../../../media/db.jpg" class="card-img-top" height="200px" alt="...">
+              <div class="card-body">
+                <h5 class="card-title"style="color: #333366">Hospital Client Loader:</h5>
+                <p class="card-text">A platform for doctors to save client on the database made with python and tkinter for the UI</p>
+                <br><br><br>
+                <a href="https://github.com/Amine-Zitoun/Client-Loader" class="btn btn-primary">Work here</a>
+              </div>
+            </div>
+          </td>
+      </tr>
+    </table>
+    <h1 style="color: white;;margin-left: 73px;font-family: 'Noto Sans', sans-serif;">Penetration Testing: </h1>
+    <table class="padding-table-columns" style="text-align: center">
+      <tr>
+          <td>
+            <div class="card" style="width: 18rem; height: 30rem;background-color: #F6E1E1 " >
+              <img src="../../../media/serv.jpg" class="card-img-top" height="200px" alt="...">
+              <div class="card-body">
+                <h5 class="card-title"style="color: #333366">Port Scanner</h5>
+                <p class="card-text">Port Scanner using python work below</p>
+                <br><br>
+                <a href="https://github.com/Amine-Zitoun/port_scanner" class="btn btn-primary">Work here</a>
+              </div>
+            </div>
+          </td>
+          <td>
+            <div class="card" style="width: 18rem; height: 30rem;background-color: #F6E1E1">
+              <img src="../../media/rev.jpg" class="card-img-top" height="200px" alt="...">
+              <div class="card-body">
+                <h5 class="card-title"style="color: #333366">Reverse shell:</h5>
+                <p class="card-text">A reverse shell attack using python work below</p>
+                <br><br><br>
+                <a href="https://github.com/Amine-Zitoun/reverse-shell" class="btn btn-primary">Work here</a>
+              </div>
+            </div>
+          </td>
+      </tr>
+    </table>
+  </body>
+</html>
